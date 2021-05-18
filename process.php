@@ -85,7 +85,7 @@ $processed_arr = array(
     'items' => array (
         array (
             'title' => $result,
-            'subtitle' => "Total of ${query} hours at the rate of ${hourly_rate} at ${percent}%",
+            'subtitle' => "total of ${hours} hours at the rate of ${hourly_rate} after adding ${percent}% fees.",
             'arg' => $result,
             'mods' => array (
                 'cmd' => array (
