@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alfredapp.codeablecalculate</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>65D8E514-6530-4163-B7C0-1685C160FF53</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2DE93B7B-D659-4E5F-988A-3145D00C27F8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Zeshan Ahmed</string>
+	<key>description</key>
+	<string>Calculates the price estimate based for given hours for Codeable</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Codeable Calculate</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>2DE93B7B-D659-4E5F-988A-3145D00C27F8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>cd</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>php ./process.php "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Codeable Calculate</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>65D8E514-6530-4163-B7C0-1685C160FF53</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This is designed for Codeable to calculate final price you need to put after including 15% default codeable's percentage that it charges from the client. 
+
+It accepts 3 arguments in total with space in between:
+
+1. Hours = you need to define how many hours you want to calculate
+2. Hourly rate (optional) = rate in $ like 90, 100, 120 etc. Default is 90
+3. Percentage (optional) = default is 15%, but you can overwrite it.</string>
+	<key>uidata</key>
+	<dict>
+		<key>2DE93B7B-D659-4E5F-988A-3145D00C27F8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>625</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+		<key>65D8E514-6530-4163-B7C0-1685C160FF53</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>290</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://zeshanahmed.com/</string>
+</dict>
+</plist>
