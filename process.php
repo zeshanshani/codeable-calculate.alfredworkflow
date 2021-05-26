@@ -84,9 +84,9 @@ $result = $without_percentage + $with_percentage;
 $processed_arr = array(
     'items' => array (
         array (
-            'title' => $result,
+            'title' => '$' . $result,
             'subtitle' => "total of ${hours} hours at the rate of ${hourly_rate} after adding ${percent}% fees.",
-            'arg' => $result,
+            'arg' => '$' . $result,
             'mods' => array (
                 'cmd' => array (
                     'valid' => true,
